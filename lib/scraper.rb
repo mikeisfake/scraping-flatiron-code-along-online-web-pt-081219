@@ -14,9 +14,9 @@ class Scraper
     title = get_page.css(".posts-holder h2")
   end 
   
-  def make_courses
-   text_array = get_courses.text
-  end 
+  # def make_courses
+  # text_array = get_courses.each {|course| Course.new}
+  # end 
   
   def print_courses
     self.make_courses
