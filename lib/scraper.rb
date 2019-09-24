@@ -18,7 +18,6 @@ class Scraper
   
   def make_courses
    text_array = get_courses.text
-   result = get_courses.each{|course| puts "#{course.text}"}
   end 
   
   def print_courses
