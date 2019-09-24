@@ -16,8 +16,7 @@ class Scraper
   end 
   
   def make_courses
-   text_array = get_courses.text.to_a
-   binding.pry
+   text_array = get_courses.text
    result = get_courses.each{|course| puts "#{course.text}"}
   end 
   
