@@ -11,8 +11,10 @@ class Scraper
   end 
   
   def get_courses
-    get_page.css(".post").first.css("h2")
-    get_page.css(".post").first.css(".date")
+    doc.css(".post").first.css("h2").text
+    doc.css(".post").first.css(".date").text
+    doc.css(".post").first.css("p").text
+    binding.pry 
   end 
   
   # def make_courses
