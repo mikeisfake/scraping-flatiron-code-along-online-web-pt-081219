@@ -12,6 +12,7 @@ class Scraper
   
   def get_courses
     title = get_page.css(".posts-holder h2")
+    text_array = title.map{|course| course.text}
     binding.pry 
   end 
   
