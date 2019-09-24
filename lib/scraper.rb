@@ -11,7 +11,7 @@ class Scraper
   end 
   
   def get_courses
-    text = %w(get_page.css(".posts-holder h2").text)
+    text = get_page.css(".posts-holder h2").text.to_a
     binding.pry 
   end 
   
