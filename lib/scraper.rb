@@ -16,7 +16,7 @@ class Scraper
   end 
   
   def make_courses
-   result = get_courses.each{|course| course = Course.new}
+   result = get_courses.map{|course| course = Course.new}
     binding.pry
   end 
   
