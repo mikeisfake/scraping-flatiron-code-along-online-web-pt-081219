@@ -11,7 +11,7 @@ class Scraper
   end 
   
   def get_courses
-    title = get_page.css(".post")
+    title = get_page.css(".posts-continer")
     text_array = title.map{|course| course.text.strip}
   end 
   
