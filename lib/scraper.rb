@@ -13,7 +13,6 @@ class Scraper
   def get_courses
     title = get_page.css(".post")
     text_array = title.map{|course| course.text.strip}
-    binding.pry 
   end 
   
   # def make_courses
