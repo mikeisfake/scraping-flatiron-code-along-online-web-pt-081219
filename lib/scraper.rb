@@ -14,9 +14,9 @@ class Scraper
     self.get_page.css(".post")
   end 
   
-  # def make_courses
-  # text_array = get_courses.each {|course| Course.new}
-  # end 
+  def make_courses
+  text_array = get_courses.each {|course| Course.new}
+  end 
   
   def print_courses
     self.make_courses
