@@ -11,9 +11,8 @@ class Scraper
   end 
   
   def get_courses
-    title = get_page.css(".posts-holder")
-   # text_array = title.each.map{|course| course.text.strip}
-   #binding.pry 
+    get_page.css(".post").first.css("h2")
+    get_page.css(".post").first.css(".date")
   end 
   
   # def make_courses
