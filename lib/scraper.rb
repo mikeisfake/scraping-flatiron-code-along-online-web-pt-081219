@@ -13,7 +13,7 @@ class Scraper
   
   def get_courses
     courses = get_page.css(".posts-holder h2")
-    courses.map{|course| course.text}
+    courses.map{|course| course.text.strip}
     binding.pry 
   end 
   
