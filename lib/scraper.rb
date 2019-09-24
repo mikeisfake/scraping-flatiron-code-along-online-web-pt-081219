@@ -13,6 +13,8 @@ class Scraper
   
   def get_courses
     title = get_page.css(".posts-holder h2")
+    schedule = get_page.css(".posts-holder.date")
+    binding.pry
   end 
   
   def make_courses
