@@ -16,7 +16,7 @@ class Scraper
   end 
   
   def make_courses
-   result = get_courses.each_with_index{|course, i| puts i+1 "#{course}"}
+   result = get_courses.each{|course| puts "#{course}"}
    binding.pry
   end 
   
