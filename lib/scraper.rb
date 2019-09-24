@@ -13,6 +13,7 @@ class Scraper
   
   def get_courses
     text = get_page.css(".posts-holder h2").text
+    binding.pry 
   end 
   
   def make_courses
